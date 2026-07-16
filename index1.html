@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Khmer&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Khmer:wght@100..900&family=Noto+Serif+Khmer:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    * {
+
+        font-family: "Khmer", sans-serif;
+    }
+
+    .bg-color:hover {
+        background-color: rgb(85, 20, 20);
+        text-transform: lowercase;
+    }
+    .btn-bg.bg-color{
+        background-color: rgb(172, 86, 86);
+        color: white;
+        text-transform: lowercase;
+    }
+</style>
+
+<body class="bg-secondary">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid my-2 text-black fw-bold mx-5">
+            <a class="navbar-brand text-danger-emphasis fw-bold fs-2 mx-5" href="#">ATOMY <i
+                    class="bi bi-cart2"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" aria-current="page" href="#">ទំព័រដើម</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="#">ការណែនាំពីក្រុមហ៊ុន</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-5 fw-bold">
+                            ការអប់រំ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold">សិក្ខាសាលា</a>
+                    </li>
+                </ul>
+                <div>
+                    <i class="bi bi-twitter fs-4"></i>
+                    <i class="bi bi-instagram fs-4 "></i>
+                    <i class="bi bi-facebook fs-4"></i>
+                    <i class="bi bi-tiktok fs-4"></i>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
+                    <button class="bg-color px-4 py-2 fs-5 rounded-3" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- carorose -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://i.pinimg.com/736x/16/7b/83/167b836a3f2995fb689e88423a004d3f.jpg" class="d-block" style="width: 100%; height: 900px; object-fit: cover;"  alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-danger-emphasis">Atomy Skincare made in Korean</h5>
+                    <p class="text-light">Good quality best seller to using treat all skin types</p>
+                </div>
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="container-fliud my-5">
+        <div class="row g-4 m-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/736x/3a/59/15/3a5915420bef8fa6252c80dfd2f2fd2f.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/736x/8b/c1/1f/8bc11f841bed79708be293ac49dede24.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> PEEL-OFF Mask</li>
+                        <li><strong>Quality:</strong>making the skin feel soft and visibly tightened</li>
+                        <li><strong>Price:</strong> $15 - $20</li>
+                    </ul>
+                    <button class="btn bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/736x/c4/b5/0d/c4b50ded03bc22403f8e624ffee2b914.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/1200x/57/75/e6/5775e65f6f152f33c28254e5e9ac621c.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/1200x/57/75/e6/5775e65f6f152f33c28254e5e9ac621c.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/1200x/21/5e/33/215e338527c0a7f918e9f3175c1d029b.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class=" btn bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/1200x/d5/18/35/d51835fbe16c45519896a6439d5a2a5b.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/1200x/65/30/f7/6530f7f9d21f9cc9185e299fb0f5b764.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/736x/70/d9/b6/70d9b6f877c5e38c38d801ccd5d4cb4a.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/736x/82/e4/f6/82e4f6c314f9694942ed2c8efd2c2581.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/736x/ba/ef/f3/baeff3a4b37755f882e08d6ef6caf51e.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 bg-secondary-subtle text-white">
+                <img src="https://i.pinimg.com/736x/92/a2/2e/92a22edabf80f76a72bdff8c3ffb157c.jpg"class="card-img-top"style="height:350px; object-fit:cover;"alt="">
+                <div class="card-body d-flex flex-column">
+                    <ul class="list-unstyled flex-grow-1">
+                        <li><strong>Brand:</strong> ATOMY</li>
+                        <li><strong>Name:</strong> ESSENCE SUN SPF 50+ /PA++++</li>
+                        <li><strong>Quality:</strong> lightweight, non-sticky textures </li>
+                        <li><strong>Price:</strong> $10 - $12</li>
+                    </ul>
+                    <button class="btn btn-bg-color bg-success-subtle w-100 text-success fs-5 rounded-3">View of  Bag</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
