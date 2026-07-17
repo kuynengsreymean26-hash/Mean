@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calamola</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Khmer&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Khmer:wght@100..900&family=Noto+Serif+Khmer:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&family=Noto+Serif+Khmer:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
@@ -19,28 +18,26 @@
         font-family: "Khmer", sans-serif;
     }
 
-    .btn-color {
-        background-color: rgb(30, 30, 216);
-        color: white;
-        font-weight: bold;
+    .btn:hover {
+        background-color: rgb(207, 90, 90);
+        border: none;
+        text-transform: uppercase;
     }
 
-    .btn-color:hover {
-        background-color: rgb(199, 22, 22);
-        color: white;
+    body {
+        background-color: gray;
     }
-    .btn:hover{
-        background-color: rgb(145, 57, 57);
-        color: white;
-        text-transform: lowercase;
+
+    .col-12:hover {
+        transform: scale(1.05);
     }
 </style>
 
-<body class="container-fluid bg-dark p-0">
-
-    <nav class="navbar navbar-expand-lg bg-white -tertiary py-3 sticky-top">
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-black py-3 sticky-top">
         <div class="container-fluid mx-5">
-            <a class="navbar-brand fs-3 text-danger fw-bold mx-5" href="#">CHANEL COPY<i class="bi bi-cart4"></i></a>
+            <a class="navbar-brand text-light fw-bold mx-5 fs-3" href="#">Calamola</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -49,27 +46,37 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active fs-5 text-success fw-bold" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-light fs-4 mx-3">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 text-success fw-bold" href="#">Order</a>
+                        <a class="nav-link text-light fs-4 mx-3">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link  fs-5 text-success fw-bold">Contact</a>
-
+                        <a class="nav-link dropdown-toggle text-light fs-4" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-white fs-4" href="#">Action</a></li>
+                            <li><a class="dropdown-item text-white fs-4" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success fw-bold fs-5">Location</a>
+                        <a class="nav-link  text-light fs-4 mx-3">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-4">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex py-2" role="search">
-                    <i class="bi bi-twitter-x pe-2 py-2 fs-5 text-success"></i>
-                    <i class="bi bi-instagram px-2 py-2 fs-5 text-success"></i>
-                    <i class="bi bi-facebook py-2 fs-5 text-success "></i>
-                    <i class="bi bi-linkedin ps-2 fs-5 py-2 text-success me-2"></i>
-                    <input class="form-control me-2 fs-5 text-success" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-color px-4" type="submit">Search</button>
-                </form>
+                <div>
+                    <i class="bi bi-search fs-3 text-danger me-5"></i>
+                    <i class="bi bi-cart4 fs-3 text-danger me-3"></i>
+                    <button class="btn btn-outline-danger ms-4">Order New <i class="bi bi-arrow-right"></i></button>
+                </div>
             </div>
         </div>
     </nav>
@@ -85,488 +92,496 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://i.pinimg.com/1200x/0b/38/d3/0b38d3c8b163cebc4098289425151cbb.jpg" class="d-block "
-                    style="width: 100%; height: 800px; object-fit: cover;" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
+                <img src="https://i.pinimg.com/736x/64/61/ae/6461ae7b7a68bf3dd77bcd0b310799b7.jpg" class="d-block w-100"
+                    style="height: 800px; object-fit: cover; image-rendering: auto;" alt="">
+                <section class="container-fluid my-5">
+                    <div class="row g-4 m-4">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/c9/c5/01/c9c5013a47c78dde12d22a8659cdb945.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Chicken Burger</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3$-4$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/f3/23/68/f3236847628d4e0951892e8a815e56c3.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Egg Burger</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3$-4$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/a1/98/b6/a198b6496b29520230700caf94f44d25.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Beef Burger</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3$-4$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/75/95/d4/7595d43128b37efa858d8589220cad91.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Pork Burger</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3$-4$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/70/25/ad/7025ade3906875476b585eb326b4b315.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Meat Pizza</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 7$-8$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/22/43/b6/2243b611898e8ad01ea17c05aed4f24f.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Pepperoni Pizza</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 5$-7$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/d9/c7/7a/d9c77a409d5e9b2a21c4df6c9d4fd4a5.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Cheese Pizza</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 4$-6$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/ac/dc/cf/acdccf786821ffa9ec151c872a762a96.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2"> Chicken Pizza</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3$-4$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/da/2f/ed/da2fedcc404bcae8ad142955259ddc61.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Crinkle Fries</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 1.5$-2$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/08/42/d2/0842d2adbc3f33a58bf5b6ffd797b464.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Chili Fries</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 1$-2$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/da/77/1c/da771ca7df0cb6cb2ca76e022added52.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Cheese Fries</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 1$-1.5$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/f1/d3/ab/f1d3ab0aef113b899a234d28afd5a8c5.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Classic Fries</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3$-4$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/7c/f7/0e/7cf70e0d48690f4de3d584ea0cb362e3.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Garlic Chicken</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 2$-4$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/a6/6d/ce/a66dce1bfd65cb9171bf2124efb331b5.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Honey Chicken</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 2.5$-3.5$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/7a/1e/b1/7a1eb1bc1c68e022f823e5e731157f8d.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Spicy Chicken</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3$-5$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/04/2d/9c/042d9c4cfdeb16d24a1406640c434eb8.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Crispy Chicken</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 2$-3$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/736x/4e/13/7f/4e137fdcb76d8754f36ef8f0cb75ab55.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Spaghetti Chicken</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 4$-6$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/22/d0/62/22d06216a41c83a6431a92fbc34be819.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Spaghetti sauce</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 3.5$-5$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/c3/7f/88/c37f88687874d78c616694b029d6c7bd.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Spaghetti Cheese </h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 2.5$-3.5$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0 bg-light">
+                                <img src="https://i.pinimg.com/1200x/4a/af/5c/4aaf5cb2f245c0ff2505a36237c0d02a.jpg"
+                                    alt="">
+                                <h4 class="text-black fw-bold pt-3 mx-2">Spaghetti Seafood</h4>
+                                <div class=" text-warning fs-4 mx-2">
+                                    <i class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star me-2"></i><i class="bi bi-star me-2"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <p class="mx-2"> Crispy fried chicken with fresh lettuce, tomato, cheese, and our
+                                    special sauce</p>
+                                <p class="text-danger fs-5 mx-2">Price : 6$-8.5$</p>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 text-light btn btn-success fs-5 rounded-4 mb-3 me-2">Buy
+                                        Here <i class="bi bi-hand-index-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="bg-dark py-5">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <!-- About -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h3 class="text-white fw-bold">
+                                    Welcome to Calamola
+                                </h3>
+
+                                <p class="text-white">
+                                    Our restaurant accepts orders through delivery apps as well as at our physical
+                                    t choice for you, offering quality food,
+                                    excellent hygiene, and outstanding s We are committed to providing every guest with a comfortable,
+                                    enjoyable, and satisfying dining experience.
+
+                                </p>
+
+                                <span class="text-white">
+                                    Thank you for choosing and supporting our store!
+                                    <i class="bi bi-heart-fill text-danger ms-2"></i>
+                                </span>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <h5 class="text-light fw-bold fs-4">Quick Links</h5>
+
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="text-light text-decoration-none">Home</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-light text-decoration-none">Order</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-light text-decoration-none">Contact</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-light text-decoration-none">Location</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-light text-decoration-none">Menu</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Contact -->
+                            <div class="col-6 col-md-3 col-lg-3">
+                                <h5 class="text-light fw-bold fs-4">Contact</h5>
+
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="bi bi-geo-fill text-danger me-2"></i>
+                                        Phnom Penh, Cambodia
+                                    </li>
+
+                                    <li class="mb-2 text-light">
+                                        <i class="bi bi-telephone-fill text-danger me-2"></i>
+                                        +855 12 345 678
+                                    </li>
+
+                                    <li class="mb-2 text-light">
+                                        <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+                                        Sangkat Sen Sok, Phnom Penh
+                                    </li>
+
+                                    <li class="mb-2 text-light">
+                                        <i class="bi bi-instagram text-danger me-2"></i>Instagram
+                                        <i class="bi bi-facebook text-danger ms-3 me-2"></i>Facebook
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Information -->
+                            <div class="col-12 col-lg-3">
+                                <h5 class="text-white fw-bold fs-4">About Us</h5>
+
+                                <div class="d-flex gap-3 flex-wrap mt-4">
+                                    <button class="btn btn-outline-success px-3 py-2 fs-5">Start Order</button>
+                                    <button class="btn btn-outline-success px-3 py-2 fs-5 ">Back Again</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </footer>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://i.pinimg.com/736x/18/c3/6d/18c36de173844465bbab25622e09049c.jpg" class="d-block "
-                    style="width: 100%; height: 1000px; object-fit: cover;" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://i.pinimg.com/1200x/b3/68/e9/b368e9ca275fbdf588a75e5260a4ecf4.jpg" class="d-block "
-                    style="width: 100%; height: 800px; object-fit: cover;" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-<section class="container-fliud my-5">
-    <div class="row g-4 m-4">
-
-        <!-- Card 1 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-                <img src="https://i.pinimg.com/736x/75/cb/a2/75cba24c84005825e67f232f9ed09d7a.jpg"class="card-img-top"style="height:250px; object-fit:cover;"alt="">
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini White Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2500 - $3500</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of  Bag
-                    </button>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/1200x/62/f6/c9/62f6c9ac599a471fe724bb282b0c92b6.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/87/bd/13/87bd13354f877696c24c940eb29db1a3.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Brown Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2300 - $3300</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/1200x/7b/f2/84/7bf284fd5ed87d3e390add35e3f318c7.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini White Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $1850 - $3500</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of  Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/26/c9/a8/26c9a8d226b926b7f6d9fce03f7d2e94.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/c8/01/bc/c801bc84689056106f9aa64ed4056866.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/1200x/8c/a2/43/8ca2431261742925b62b7656e6b7341d.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/1200x/5b/66/f5/5b66f5200e2cde0e39dffe756db8b458.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/10/ab/09/10ab09385f19c9c53a15a0a3879fd323.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/78/4d/16/784d16e6ebcf8ebe0af1bda5b352dafb.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/5e/44/cb/5e44cb1198cf6cb14c9aca4ba1878fa7.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/ab/47/71/ab4771445da3f733a27e4621241a7541.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/11/88/30/118830e48850c63761a5d0f94225c598.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/9c/d4/8e/9cd48e858e080871c559dea294ced305.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/1200x/52/44/a5/5244a521c433cf0a62b541af39b71296.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-            <div class="card h-100 shadow-sm border-0 bg-secondary text-white">
-
-                <img src="https://i.pinimg.com/736x/db/ca/b2/dbcab2e4012f33a933e88bfd47a9e646.jpg"
-                    class="card-img-top"
-                    style="height:250px; object-fit:cover;"
-                    alt="">
-
-                <div class="card-body d-flex flex-column">
-                    <ul class="list-unstyled flex-grow-1">
-                        <li><strong>Brand:</strong> Chanel</li>
-                        <li><strong>Name:</strong> Large Mini Red Ball 22C</li>
-                        <li><strong>Quality:</strong> Luxurious materials</li>
-                        <li><strong>Price:</strong> $2600 - $4100</li>
-                    </ul>
-
-                    <button class="btn btn-success w-100 rounded-pill">
-                        View of Bag
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<footer class="bg-dark py-5">
-    <div class="container">
-        <div class="row g-4">
-
-            <!-- About -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <h3 class="text-success">
-                    CHANEL FOR SELLER <i class="bi bi-handbag"></i>
-                </h3>
-
-                <p class="text-white">
-                    Our store specializes in selling and buying
-                    <b class="text-danger">Chanel</b> products of all collections.
-                    We also provide repair and restoration services for Chanel
-                    items with careful attention to quality and craftsmanship.
-                </p>
-
-                <span class="text-white">
-                    Thank you for choosing and supporting our store!
-                    <i class="bi bi-heart-fill text-danger ms-2"></i>
-                </span>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-6 col-md-3 col-lg-2">
-                <h5 class="text-light fw-bold">Quick Links</h5>
-
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Home</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Order</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Contact</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Location</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="col-6 col-md-3 col-lg-3">
-                <h5 class="text-light fw-bold">Contact</h5>
-
-                <ul class="list-unstyled">
-                    <li class="mb-2 text-light">
-                        <i class="bi bi-geo-fill text-danger me-2"></i>
-                        Phnom Penh, Cambodia
-                    </li>
-
-                    <li class="mb-2 text-light">
-                        <i class="bi bi-telephone-fill text-danger me-2"></i>
-                        +855 12 345 678
-                    </li>
-
-                    <li class="mb-2 text-light">
-                        <i class="bi bi-geo-alt-fill text-danger me-2"></i>
-                        Sangkat Sen Sok, Phnom Penh
-                    </li>
-
-                    <li class="mb-2 text-light">
-                        <i class="bi bi-instagram text-danger me-2"></i>Instagram
-                        <i class="bi bi-facebook text-primary ms-3 me-2"></i>Facebook
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Information -->
-            <div class="col-12 col-lg-3">
-                <h5 class="text-white fw-bold">Information</h5>
-
-                <div class="d-flex gap-3 flex-wrap mt-4">
-                    <button class="btn btn-success px-4 py-2">Yes</button>
-                    <button class="btn btn-success px-4 py-2">No</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</footer>
-    
-
-
+            <!-- section -->
+            <!-- Footer -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
